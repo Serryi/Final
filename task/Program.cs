@@ -1,7 +1,8 @@
-﻿Console.Write("Введите количество элементов массива: ");
+﻿
+Console.Write("Введите количество элементов массива: ");
 int m = Convert.ToInt32(Console.ReadLine());
 string [] stringArray = new string [m];
-void GetArray(string [] stringArray)
+void GetArray(string [] stringArray) //заполнение массива
 {
   for (int i = 0; i<stringArray.Length; i++)
   {
@@ -9,7 +10,7 @@ void GetArray(string [] stringArray)
      stringArray[i] = Console.ReadLine();
   }
 }
-string[] Second(string [] stringArray)
+string[] Second(string [] stringArray) //новый массив с заданными условиями
 {
   int n = 0;
   for (int i = 0;i<stringArray.Length;i++)
@@ -29,7 +30,7 @@ string[] Second(string [] stringArray)
   }
   return rez;
 }
-void PrintArray(string[] array)
+void PrintArray(string[] array) //вывод на печать
 {
   Console.Write("[");
   for (int i = 0; i < array.Length; i++)
